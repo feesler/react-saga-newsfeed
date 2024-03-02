@@ -10,7 +10,8 @@
   "homepage": "https://henryfeesler.com/netology/13/react-saga-newsfeed",
   "private": true,
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.7",
+    "@dotenvx/dotenvx": "^0.24.0",
+    "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
@@ -28,7 +29,7 @@
   "scripts": {
     "prestart": "npm install",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "dotenvx run --env-file=.env.production -- react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

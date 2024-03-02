@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { readNews } from '../store/newsFeedSlice';
 import NewsCard from './NewsCard';

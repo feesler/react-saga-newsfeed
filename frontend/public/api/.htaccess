@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /netology/13/react-saga-newsfeed/api/
+
+RewriteRule ^(.*)$ news.php?route=$1 [L,QSA]
