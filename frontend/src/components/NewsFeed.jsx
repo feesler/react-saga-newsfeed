@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { readNews } from '../store/newsFeedSlice';
-import NewsCard from './NewsCard';
-import LoadMoreButton from './LoadMoreButton';
+import { readNews } from '../store/newsFeedSlice.js';
+import NewsCard from './NewsCard.jsx';
+import LoadMoreButton from './LoadMoreButton.jsx';
 
 function NewsFeed(props) {
   const dispatch = useDispatch();

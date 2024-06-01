@@ -1,5 +1,5 @@
 import { put, spawn, retry, takeLatest, select } from 'redux-saga/effects';
-import { readNews, readNewsSuccess, readNewsFailure } from '../store/newsFeedSlice';
+import { readNews, readNewsSuccess, readNewsFailure } from '../store/newsFeedSlice.js';
 
 const newsUrl = process.env.REACT_APP_NEWS_URL;
 const getNews = (store) => store.newsFeed.items;

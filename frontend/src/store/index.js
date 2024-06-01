@@ -1,7 +1,7 @@
-import newsFeedReducer from './newsFeedSlice';
+import newsFeedReducer from './newsFeedSlice.js';
 import { configureStore } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
-import saga from '../sagas';
+import saga from '../sagas/index.js';
 
 const sagaMiddleware = createSagaMiddleware();
 

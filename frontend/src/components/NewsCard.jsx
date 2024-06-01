@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { formatTime } from '../utils/DateTimeUtils';
+import { formatTime } from '../utils/DateTimeUtils.js';
 import { decodeXML } from 'entities';
 import { ReactComponent as LikesIcon } from '../assets/likes-icon.svg';
 import { ReactComponent as CommentsIcon } from '../assets/comments-icon.svg';
 import { ReactComponent as RepostsIcon } from '../assets/reposts-icon.svg';
 import { ReactComponent as ViewsIcon } from '../assets/views-icon.svg';
-import LinkAttachment from './LinkAttachment';
-import IconCounter from './IconCounter';
+import LinkAttachment from './LinkAttachment.jsx';
+import IconCounter from './IconCounter.jsx';
 
 function NewsCard(props) {
   const { item } = props;
